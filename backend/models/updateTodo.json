@@ -3,8 +3,14 @@
     "title": "updateTodo",
     "type": "object",
     "properties": {
-        "name": { "type": "string" },
-        "dueDate": { "type": "string" },
+        "name": { 
+            "type": "string",
+            "minLength": 1
+        },
+        "dueDate": {
+            "type": "string",
+            "minLength": 1
+        },
         "done": { "type": "boolean" }
     },
     "required": [ "name", "dueDate", "done" ],

@@ -3,9 +3,18 @@
     "title": "createTodo",
     "type": "object",
     "properties": {
-        "name": { "type": "string" },
-        "dueDate": { "type": "string" },
-        "attachmentUrl": { "type": "string" }
+        "name": { 
+            "type": "string",
+            "minLength": 1
+        },
+        "dueDate": {
+            "type": "string",
+            "minLength": 1
+        },
+        "attachmentUrl": {
+            "type": "string",
+            "minLength": 1
+        }
     },
     "required": [ "name", "dueDate" ],
     "additionalProperties": false
